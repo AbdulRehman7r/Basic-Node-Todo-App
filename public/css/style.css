@@ -1,0 +1,81 @@
+:root{
+  --color-1:#9b6cdd;
+  --color-2:#e3e2ff;
+  --m-shadow:5px 5px 15px -5px rgb(0,0,0,0.3);
+}
+html {
+  background: linear-gradient(45deg, var(--color-1) 50%, var(--color-2) 50%);
+  min-height: 100vh;
+}
+
+.container {
+  width: 350px;
+  margin: 40px auto;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.main-date {
+  font-family: sans-serif;
+  color: white;
+  font-weight: 900;
+  text-align: center;
+  font-size: 1.3rem;
+  padding:10px;
+  border-radius: 5px;
+  box-shadow: var(--m-shadow);
+  background: var(--color-1);
+  margin-bottom: 20px;
+}
+.main {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow:  var(--m-shadow);
+  background: white;
+
+}
+.item-container input[type=checkbox]{
+margin: 20px;
+
+}
+.item-container{
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+}
+.item {
+  margin: 1px;
+  width: 100%;
+  font-family: cursive;
+}
+
+input:checked+div{
+  text-decoration: line-through;
+  text-decoration-color: var(--color-1);
+}
+
+button {
+  background-color: var(--color-1);
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1rem;
+  color: white;
+  border-radius: 100%;
+  border: none;
+}
+
+form > input[type="text"] {
+  font-family: sans-serif;
+  text-align: center;
+  width: 280px;
+  outline: none;
+  border: none;
+  font-family: cursive;
+  font-size: 1rem;
+}
+form:last-child {
+  border: none;
+}

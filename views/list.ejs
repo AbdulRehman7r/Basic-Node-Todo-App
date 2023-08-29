@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Todo</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main-date"><%=date%></div>
+      <div class="main">
+        <% list.map((val,index,list)=>{ %>
+          <div class="item-container">
+            <input type="checkbox"></input>
+            <div class="item"><%=val%></div>
+          </div>
+        <% }) %>
+        <form action="/" method="POST" class="item-container item">
+          <input type="text" name="todo" autocomplete="off" placeholder="New Item"/>
+          <button type="submit">+</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
